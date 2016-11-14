@@ -11,6 +11,11 @@ class DatasourceManager {
 
 	static let sharedInstance = DatasourceManager()
 	
+	lazy var EmptyDatasource: LocalDatasource<Item1> = {
+    
+        return LocalDatasource<Item1>(resource: DatasourceConfig.Local.EmptyDatasource.resource) 
+    }()
+	
 	
 	lazy var ExpensesDS: CloudDatasource<ExpensesDSItem> = {
     

@@ -23,14 +23,19 @@ class MainMenuViewController: SimpleTabBarController {
 		let tab3 = CustomViewController()
 		tab3.tabBarItem = UITabBarItem(title: "Static", image: UIImage(named: "DefaultMenuIcon.png"), tag: 2)
  
+		let tab4 = NuevaListaViewController()
+		tab4.tabBarItem = UITabBarItem(title: "NuevaLista", image: UIImage(named: "DefaultMenuIcon.png"), tag: 3)
+ 
 		tab1.behaviors.append(LogoutBehavior(viewController: tab1))
 		tab2.behaviors.append(LogoutBehavior(viewController: tab2))
 		tab3.behaviors.append(LogoutBehavior(viewController: tab3))
+		tab4.behaviors.append(LogoutBehavior(viewController: tab4))
 
 		viewControllers = [
             UINavigationController(rootViewController: tab1),
             UINavigationController(rootViewController: tab2),
             UINavigationController(rootViewController: tab3),
+            UINavigationController(rootViewController: tab4),
         
 		]
 		

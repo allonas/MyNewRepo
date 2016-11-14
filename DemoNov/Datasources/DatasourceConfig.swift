@@ -9,6 +9,14 @@ import Foundation
  
  enum DatasourceConfig {
 
+	
+	enum Local {
+
+		enum EmptyDatasource{
+			
+			static let resource = "EmptyDatasource"
+		}
+	}
 	 
 	
 	enum Cloud {
