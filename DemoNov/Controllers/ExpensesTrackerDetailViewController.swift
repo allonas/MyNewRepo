@@ -1,5 +1,5 @@
 //
-//  ExpenseTrackerDetailViewController.swift
+//  ExpensesTrackerDetailViewController.swift
 //  DemoNov
 //
 //  This App has been generated using IBM Mobile UI Builder
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExpenseTrackerDetailViewController: DataViewController<CategoriesDSItem> {
+class ExpensesTrackerDetailViewController: DataViewController<CategoriesDSItem> {
     
     var didSetupConstraints = false
 	
@@ -156,7 +156,7 @@ class ExpenseTrackerDetailViewController: DataViewController<CategoriesDSItem> {
 	}
 }
 
-extension ExpenseTrackerDetailViewController: DataResponse {
+extension ExpensesTrackerDetailViewController: DataResponse {
 
     func success() {
         

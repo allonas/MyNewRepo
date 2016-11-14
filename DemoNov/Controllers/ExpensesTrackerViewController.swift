@@ -1,5 +1,5 @@
 //
-//  ExpenseTrackerViewController.swift
+//  ExpensesTrackerViewController.swift
 //  DemoNov
 //
 //  This App has been generated using IBM Mobile UI Builder
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExpenseTrackerViewController: TableViewController<CategoriesDSItem>, UITableViewDataSource, UITableViewDelegate {
+class ExpensesTrackerViewController: TableViewController<CategoriesDSItem>, UITableViewDataSource, UITableViewDelegate {
     
     typealias Cell = BasicImageCell
 
@@ -22,9 +22,9 @@ class ExpenseTrackerViewController: TableViewController<CategoriesDSItem>, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AnalyticsManager.sharedInstance?.analytics?.logPage("ExpenseTracker")
+        AnalyticsManager.sharedInstance?.analytics?.logPage("ExpensesTracker")
        
-	    navigationItem.title = NSLocalizedString("Expense Tracker", comment: "")
+	    navigationItem.title = NSLocalizedString("Expenses Tracker", comment: "")
 	
 		let sortOptions = DatasourceSortOptions(field: CategoriesDSItemMapping.title, ascending: true)
         datasourceOptions = DatasourceOptions(sortOptions: sortOptions)
@@ -79,7 +79,7 @@ class ExpenseTrackerViewController: TableViewController<CategoriesDSItem>, UITab
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
-        let destinationViewController = ExpenseTrackerDetailViewController()
+        let destinationViewController = ExpensesTrackerDetailViewController()
         destinationViewController.item = items[indexPath.row]
 		destinationViewController.hidesBottomBarWhenPushed = true
 	        
@@ -98,7 +98,7 @@ class ExpenseTrackerViewController: TableViewController<CategoriesDSItem>, UITab
 
 //MARK: - <DataResponse>
 
-extension ExpenseTrackerViewController: DataResponse {
+extension ExpensesTrackerViewController: DataResponse {
 
     func success() {
         

@@ -14,7 +14,7 @@ class MainMenuViewController: SimpleTabBarController {
         
 		view.backgroundColor = Style.sharedInstance.backgroundColor
 		
-		let tab1 = ExpenseTrackerViewController()
+		let tab1 = ExpensesTrackerViewController()
 		tab1.tabBarItem = UITabBarItem(title: "Expense Tracker", image: UIImage(named: "DefaultMenuIcon.png"), tag: 0)
  
 		let tab2 = ExpensesViewController()
