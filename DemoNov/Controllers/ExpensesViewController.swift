@@ -87,6 +87,7 @@ class ExpensesViewController: TableViewController<ExpensesDSItem>, UITableViewDa
 
         let destinationViewController = ExpensesDetailViewController()
         destinationViewController.item = items[indexPath.row]
+		destinationViewController.hidesBottomBarWhenPushed = true
 	        
         navigationController?.pushViewController(destinationViewController, animated: true)
     }

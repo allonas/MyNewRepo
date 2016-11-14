@@ -81,6 +81,7 @@ class ExpenseTrackerViewController: TableViewController<CategoriesDSItem>, UITab
 
         let destinationViewController = ExpenseTrackerDetailViewController()
         destinationViewController.item = items[indexPath.row]
+		destinationViewController.hidesBottomBarWhenPushed = true
 	        
         navigationController?.pushViewController(destinationViewController, animated: true)
     }
