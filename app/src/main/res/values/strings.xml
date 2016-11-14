@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string name="app_name">ActionsAppTest</string>
+
+    <!-- Activity Titles -->
+    <string formatted="false" name="actionsAppTestMainActivity">ActionsAppTest</string>
+    <string formatted="false" name="actionNullableListActivity">ActionNullableList</string>
+    <string formatted="false" name="actionsNotNullableListActivity">ActionsNotNullableList</string>
+	
+	<!-- Navigation Titles -->
+    <string name="mainmenu_entry0">ActionNullableList</string>
+    <string name="mainmenu_entry1">ActionsNotNullableList</string>
+</resources>
+

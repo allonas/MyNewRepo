@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.buildup.actionstest20151127112013" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+
+        <activity android:name="io.buildup.actionstest20151127112013.ui.ActionsAppTestMainActivity"
+            android:label="@string/actionsAppTestMainActivity"
+            android:theme="@style/AppTheme.Drawer">
+          <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+      </activity>
+        <activity android:name="io.buildup.actionstest20151127112013.ui.ActionNullableListActivity"
+            android:label="@string/actionNullableListActivity"
+        />
+        <activity android:name="io.buildup.actionstest20151127112013.ui.ActionNullableListDetailActivity"
+        />
+        <activity android:name="io.buildup.actionstest20151127112013.ui.ActionsNotNullableListActivity"
+            android:label="@string/actionsNotNullableListActivity"
+        />
+        <activity android:name="io.buildup.actionstest20151127112013.ui.ActionsNotNullableListDetailActivity"
+        />
+    </application>
+
+</manifest>
